@@ -72,10 +72,8 @@ password=password_e,
 user_agent=user_agent_e)
 print("\nImport User Authenticated!")
 
-print("\nJoining The Provided Subreddits..... (Press Ctrl+C to Skip in Between)")
+print("\nJoining The Provided Subreddits.....")
 for i in export_lst:
-    if KeyboardInterrupt:
-        print("Process Interrupted By User...skipping to next step.....")
     sub_reddit=i
     subreddit = reddit.subreddit(sub_reddit)
     start = time.time()
